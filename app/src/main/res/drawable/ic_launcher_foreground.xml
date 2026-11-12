@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 임시 발바닥 아이콘 (Adaptive Icon foreground, 108dp 캔버스) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="@color/icon_fg" android:pathData="M54,58 C44,58 38,66 38,72 C38,78 44,80 54,80 C64,80 70,78 70,72 C70,66 64,58 54,58 Z"/>
+    <path android:fillColor="@color/icon_fg" android:pathData="M40,48 m-6,0 a6,8 0 1,0 12,0 a6,8 0 1,0 -12,0"/>
+    <path android:fillColor="@color/icon_fg" android:pathData="M50,40 m-6,0 a6,8 0 1,0 12,0 a6,8 0 1,0 -12,0"/>
+    <path android:fillColor="@color/icon_fg" android:pathData="M64,40 m-6,0 a6,8 0 1,0 12,0 a6,8 0 1,0 -12,0"/>
+    <path android:fillColor="@color/icon_fg" android:pathData="M74,48 m-6,0 a6,8 0 1,0 12,0 a6,8 0 1,0 -12,0"/>
+</vector>

@@ -1,0 +1,7 @@
+<resources>
+    <!-- 주간/야간 모드 자동 대응 -->
+    <style name="Theme.PawPilot" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+</resources>

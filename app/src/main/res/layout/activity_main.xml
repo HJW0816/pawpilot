@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Portrait(1 window)·Landscape(2 window) 모두 깨지지 않도록 단순 세로 배치 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="48dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textColor="@color/text_secondary"
+        android:textSize="24sp" />  <!-- Label Medium 24 -->
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/status_calm"
+        android:textColor="@color/status_calm"
+        android:textSize="56sp"
+        android:textStyle="bold" />  <!-- Headline Medium 56 -->
+
+    <TextView
+        android:id="@+id/restText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp" />  <!-- Body Medium 28 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRestStop"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:text="@string/btn_rest_stop"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnCalmSound"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="@string/btn_calm_sound"
+            android:textSize="28sp" />
+    </LinearLayout>
+</LinearLayout>

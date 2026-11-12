@@ -1,0 +1,11 @@
+<resources>
+    <color name="bg">#FFFFFF</color>
+    <color name="text_primary">#111111</color>
+    <color name="text_secondary">#5C5C5C</color>
+    <color name="status_calm">#1B7F4B</color>
+    <color name="status_watch">#9A6100</color>
+    <color name="status_rest">#B3261E</color>
+    <color name="brand">#2F6BFF</color>
+    <color name="icon_bg">#2F6BFF</color>
+    <color name="icon_fg">#FFFFFF</color>
+</resources>

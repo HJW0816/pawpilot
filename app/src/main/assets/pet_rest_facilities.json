@@ -1,0 +1,232 @@
+{
+  "source": "한국도로공사",
+  "sourceUrl": "https://www.data.go.kr/data/15064250/fileData.do",
+  "asOf": "2026-07-31",
+  "sourceSha256": "0ab35819d660f637385c7dcfc5450cf5db002c9144befa51db4895a608c1a0c0",
+  "facilities": [
+    {
+      "name": "용인(강릉)",
+      "kind": "놀이터",
+      "location": "휴게소- 주유소 사이",
+      "hours": "08:00~20:00",
+      "closed": "연중무휴",
+      "installedYear": "2018"
+    },
+    {
+      "name": "덕평",
+      "kind": "놀이터",
+      "location": "입구로부터 50m",
+      "hours": "10:00~19:00(동절기 18시까지)",
+      "closed": "연중무휴",
+      "installedYear": "2013"
+    },
+    {
+      "name": "충주(양평)",
+      "kind": "놀이터",
+      "location": "휴게소 전망대 옆",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2017"
+    },
+    {
+      "name": "단양팔경(부산)",
+      "kind": "놀이터",
+      "location": "매장 뒤 테마공원내",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2019"
+    },
+    {
+      "name": "금왕(제천)",
+      "kind": "놀이터",
+      "location": "매장으로부터 38m",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2019"
+    },
+    {
+      "name": "화서(영덕)",
+      "kind": "놀이터",
+      "location": "테마공원 내",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2019"
+    },
+    {
+      "name": "죽암(서울)",
+      "kind": "놀이터",
+      "location": "휴게소 우측 30m",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2013"
+    },
+    {
+      "name": "서산(목포)",
+      "kind": "놀이터",
+      "location": "입구로부터 300m",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2016"
+    },
+    {
+      "name": "군산(서울)",
+      "kind": "놀이터",
+      "location": "입구로부터 200m",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2016"
+    },
+    {
+      "name": "오수(완주)",
+      "kind": "놀이터",
+      "location": "창업매장- 열린매장 사이",
+      "hours": "08:00~20:00(동절기 18시까지)",
+      "closed": "연중무휴",
+      "installedYear": "2017"
+    },
+    {
+      "name": "진주(부산)",
+      "kind": "놀이터",
+      "location": "본관에서 25m",
+      "hours": "10시~21시(동절기 18시까지)",
+      "closed": "매주월요일 휴무- 우천시",
+      "installedYear": "2016"
+    },
+    {
+      "name": "신탄진(서울)",
+      "kind": "놀이터",
+      "location": "휴게소 건물 우측 야구장 옆",
+      "hours": "09:00~18:00(동절기 17시까지)",
+      "closed": "연중무휴",
+      "installedYear": "2019"
+    },
+    {
+      "name": "매송(목포)",
+      "kind": "놀이터",
+      "location": "휴게소- 주유소 사이",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2018"
+    },
+    {
+      "name": "매송(서울)",
+      "kind": "놀이터",
+      "location": "휴게소- 주유소 사이",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2018"
+    },
+    {
+      "name": "마장",
+      "kind": "놀이터",
+      "location": "상행서 푸드코트 앞",
+      "hours": "08:00~20:00",
+      "closed": "연중무휴",
+      "installedYear": "2023"
+    },
+    {
+      "name": "언양(서울)",
+      "kind": "놀이터",
+      "location": "휴게소 후면",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2023"
+    },
+    {
+      "name": "천안삼거리(서울)",
+      "kind": "놀이터",
+      "location": "주유소 우측 50M지점(휴게소- 주유소 사이)",
+      "hours": "08:30~20:30",
+      "closed": "연중무휴",
+      "installedYear": "2024"
+    },
+    {
+      "name": "남한강",
+      "kind": "놀이터",
+      "location": "매장뒤 펫그라운드",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2024"
+    },
+    {
+      "name": "남한강",
+      "kind": "놀이터",
+      "location": "2층옥상엘로우스탑",
+      "hours": "10:00~18:00",
+      "closed": "연중무휴",
+      "installedYear": "2024"
+    },
+    {
+      "name": "평택",
+      "kind": "놀이터",
+      "location": "휴게소-기아 인증 중고차 센터 연결로 사이",
+      "hours": "09:00~19:00",
+      "closed": "연중무휴",
+      "installedYear": "2025"
+    },
+    {
+      "name": "내린천",
+      "kind": "놀이터",
+      "location": "휴게소- 주유소 사이(1층)",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2017"
+    },
+    {
+      "name": "문경(창원)",
+      "kind": "놀이터",
+      "location": "로컬푸드 판매장 뒤",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2023"
+    },
+    {
+      "name": "치악(춘천)",
+      "kind": "놀이터",
+      "location": "휴게소- 주유소 사이",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2024"
+    },
+    {
+      "name": "정읍(순천)",
+      "kind": "놀이터",
+      "location": "휴게소 정읍홍보전시관 우측",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2024"
+    },
+    {
+      "name": "영천(포항)",
+      "kind": "놀이터",
+      "location": "본관 입구 우측",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2024"
+    },
+    {
+      "name": "군위(부산)",
+      "kind": "놀이터",
+      "location": "본관 입구 우측",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2023"
+    },
+    {
+      "name": "군위(춘천)",
+      "kind": "놀이터",
+      "location": "본관 입구 우측",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2023"
+    },
+    {
+      "name": "진영(부산)",
+      "kind": "놀이터",
+      "location": "롯데리아 매장 앞",
+      "hours": "24시간",
+      "closed": "연중무휴",
+      "installedYear": "2023"
+    }
+  ]
+}

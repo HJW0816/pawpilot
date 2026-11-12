@@ -1,0 +1,47 @@
+{
+  "packageName": "com.estareng.pawpilot",
+  "appDescription": "A companion travel app for guardian-selected rest reminders and rest stop discovery.",
+  "invokeWord": "포파일럿",
+  "version": "0.1.0",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "component": "activity",
+        "name": "FIND_REST_STOP",
+        "description": "Open rest stop search and request a native navigation search without changing the route.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "component": "activity",
+        "name": "GET_REST_STATUS",
+        "description": "Read the remaining guardian-selected rest interval and whether the journey uses vehicle signals or demo time.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "component": "activity",
+        "name": "CANCEL_REST_SEARCH",
+        "description": "Cancel a pending rest stop search in PawPilot without modifying the navigation route.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    }
+  ]
+}

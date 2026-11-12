@@ -1,0 +1,6 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PawPilot 동승자 연결</title>
+<style>body{font:18px system-ui;background:#fff6f0;color:#462d28;max-width:640px;margin:auto;padding:24px}h1{font-size:28px}button,input,textarea,select{font:inherit;box-sizing:border-box;width:100%;min-height:52px;margin:8px 0;padding:12px;border:1px solid #ad3d21;border-radius:12px;background:white;color:#462d28}button{background:#ad3d21;color:white;font-weight:700}button:disabled{opacity:.5}article{background:white;border-radius:16px;padding:20px;margin:16px 0}small{display:block;line-height:1.6}#status{min-height:48px;white-space:pre-line}:focus-visible{outline:3px solid #145e9d;outline-offset:3px}textarea{min-height:100px}</style>
+<h1>PawPilot · 동승자</h1><p>휴게소를 비교하고 차량으로 후보를 보내세요. 경로 변경은 차량에서 직접 확인합니다.</p>
+<form id="join"><label for="code">차량에 표시된 연결 코드</label><input id="code" autocomplete="off" spellcheck="false" maxlength="19" required><small>연결에 동의하면 이번 경로의 시설 후보를 받습니다. 제안과 후기 초안은 최대 15분 후 삭제되며 공개되지 않습니다. 운전자는 주행 중 휴대폰을 조작하지 마세요.</small><button>동의하고 연결</button></form>
+<p id="status" role="status" aria-live="polite"></p><main id="candidates"></main>
+<script src="/companion.js" defer></script></html>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PawPilot</string>
+    <string name="app_title">포파일럿 · 반려동물 동승 중</string>
+    <string name="status_calm">편안해요</string>
+    <string name="status_watch">조금 불편해 보여요</string>
+    <string name="status_rest">곧 쉬어 가요</string>
+    <string name="rest_in_minutes">다음 휴식까지 %1$d분</string>
+    <string name="btn_rest_stop">펫 휴게소 추가</string>
+    <string name="btn_calm_sound">진정 사운드</string>
+    <string name="toast_rest_stop">경유지 추가는 NaviHelper 연동 후 동작합니다</string>
+    <string name="toast_calm_sound">진정 사운드는 오디오 포커스 연동 후 동작합니다</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 차량(AAOS) 전용 앱 -->
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+
+    <uses-permission android:name="pleos.car.permission.FUSED_LOCATION" />
+
+    <!-- NaviHelper SearchPlace: route changes are made by the user in the native navigation UI. -->
+    <uses-permission android:name="pleos.car.permission.NAVI_CUSTOM_MAP" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.car.permission.CAR_SPEED" />
+
+    <!-- Check whether OPEN_DOCUMENT resolves to a real picker or the AAOS placeholder. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT" />
+            <category android:name="android.intent.category.OPENABLE" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <!-- Vehicle SDK 읽기 권한: 승인된 범위만 선언 (미승인 권한 선언 시 심사 탈락) -->
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />     <!-- Brake, Odometer, DrivingMode -->
+    <uses-permission android:name="pleos.car.permission.CAR_CLIMATE" />   <!-- HVAC 상태 -->
+    <uses-permission android:name="pleos.car.permission.CAR_WINDOWS" />   <!-- Window 위치 -->
+    <uses-permission android:name="pleos.car.permission.CAR_SEATS" />     <!-- Seat 착좌 -->
+    <uses-permission android:name="pleos.car.permission.CAR_DOORS" />     <!-- Door -->
+    <uses-permission android:name="pleos.car.permission.CAR_INFO" />      <!-- CarInfo -->
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PawPilot">
+        <uses-library android:name="android.car" android:required="false" />
+        <service android:name=".JourneyService" android:exported="false" android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="User-started companion rest reminder continues while the driver uses the native navigation app; visible notification offers a stop action. Vehicle mode counts fresh speed observations; demo mode is explicitly labeled." />
+        </service>
+
+        <!-- CCP(로터리) 미지원 선언: 터치만으로 모든 필수 조작 가능해야 함 -->
+        <meta-data android:name="com.hmg.rotary.ROTARY_SUPPORTED" android:value="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|uiMode">
+            <!-- 주행 중 사용(DO) 선언: CarUxRestrictions 플래그별 제한은 앱이 직접 처리 -->
+            <meta-data android:name="distractionOptimized" android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="FIND_REST_STOP" />
+                <action android:name="GET_REST_STATUS" />
+                <action android:name="CANCEL_REST_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
